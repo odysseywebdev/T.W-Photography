@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T.W Photography</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<script src="https://kit.fontawesome.com/5dd877f52e.js" crossorigin="anonymous"></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="bw.html">Black&White</a></li>
+  <li><a href="coloured.html">Coloured</a></li>
+  </ul>
+
+
+
+
+<div>
+  <h1 class="animate__animated animate__backInDown">
+  <img class="logo" src="images/logo_transparent.png"></h1>
+  <h2>I'm Thomas, a photographer from Glasgow, Scotland <img class="scot" src="images/scot.png"></h1></h2>
+</div>
+
+
+<h3>Featured Work</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="images/image1.png" style="width:100%">
+  <div class="text">*location*</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="images/image2.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="images/image3.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="images/image4.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="images/image5.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="images/image6.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+<div class="contact">
+  <h2>Contact Me</h2>
+
+</div>
+</body>
+<footer>
+  <footer class="footer-distributed">
+
+  			<div class="footer-left">
+
+  				<h3>T.W Photography</h3>
+
+  				<p class="footer-links">
+  					<a href="index.html" class="link-1">Home</a>
+
+            <a href="bw.html">Black & White</a>
+
+
+            <a href="coloured.html">Coloured</a>
+  				</p>
+
+  				<p class="footer-company-name">T.W Photography © 2023</p>
+  			</div>
+
+  			<div class="footer-center">
+
+  				<div>
+  					<i class="fa fa-map-marker"></i>
+  					<p><span>Glasgow</span> Scotland</p>
+  				</div>
+
+
+
+  				<div>
+  					<i class="fa fa-envelope"></i>
+  					<p><a href="mailto:odysseywebdesign@outlook.com">thoswardphotography@outlook.com</a></p>
+  				</div>
+
+  			</div>
+
+  			<div class="footer-right">
+
+  				<p class="footer-company-about">
+  					<span>About the company</span>
+  					I'm Thomas Ward, a Photographer from Glasgow, Scotland.
+  				</p>
+
+          <p class="footer-company-about">
+            Website Designed & Developed by odysseyweb.
+          </p>
+  				<div class="footer-icons">
+
+  					<a href="https://www.instagram.com/odysseyweb/"><i class="fa-brands fa-square-instagram"></i>
+  					<a href="https://odysseywebdev.blogspot.com/"><i class="fa-brands fa-blogger"></i>
+  					<a href="https://www.linkedin.com/in/lewis-ward-801401127/"><i class="fa-brands fa-linkedin"></i>
+
+  				</div>
+
+  			</div>
+
+  		</footer>
+
+
+</html>
